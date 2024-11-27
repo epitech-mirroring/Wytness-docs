@@ -31,7 +31,14 @@ Before running the project, ensure you have the following installed:
    cd Wytness-docs
    ```
 
-2. **Install dependencies**:
+2. **Init the module if doesn't exist**:
+    you can init the module by running the following command, if the module doesn't exist:
+    - initialisation:
+      ```bash
+        go mod init PoC_GIN
+      ```
+
+3. **Install dependencies**:
    You can use either of the following commands to install dependencies:
     - Recommended:
       ```bash
@@ -42,7 +49,7 @@ Before running the project, ensure you have the following installed:
       go get .
       ```
 
-3. **Run the server**:
+4. **Run the server**:
    ```bash
    go run .
    ```
