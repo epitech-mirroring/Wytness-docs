@@ -1,0 +1,39 @@
+<template>
+    <div class="mt-5 ms-2">
+        <h1 class="text-center">Automatisation, programmation de tâches, Wytness votre solution</h1>
+
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="container m-5 px-4">
+            <p class="row">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum sit amet lectus quis aliquet.In porta risus a massa malesuada, vitae facilisis turpis vulputate. Ut quis velit eros. Vestibulum nec fermentum turpis. In et porta justo, id ultrices est. Duis vel nisl nibh. Pellentesque ac risus tempus, sagittis libero id, varius odio. Vestibulum quis est a tortor vehicula luctus. Vestibulum iaculis pretium turpis a dictum. Sed aliquam placerat est quis tincidunt.
+            </p>
+            <p class="row">
+                Phasellus mollis porttitor luctus. Mauris suscipit efficitur metus volutpat consequat. Donec sit amet vulputate augue. Maecenas commodo turpis eu blandit euismod. Curabitur bibendum sit amet nisl ac varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis tellus vitae lectus convallis scelerisque.
+            </p>
+            <div class="row my-4">
+                <div class="col d-flex align-items-center justify-content-end">
+                    <p>
+                        Proin imperdiet diam ipsum, nec interdum neque facilisis at. Morbi et eleifend ante, ut semper purus. Sed malesuada iaculis diam, in cursus ex feugiat ac. Praesent ac arcu auctor, maximus tortor non, consequat ante. Etiam consectetur lectus felis, eget feugiat leo hendrerit ac. Praesent tempus tellus ac sapien rhoncus, nec scelerisque dui fringilla. Fusce in pretium erat. Etiam non eros non enim rutrum accumsan bibendum non enim. Maecenas blandit purus sed libero ultrices euismod.
+                    </p>
+                </div>
+                <img    src="/assets/images/task_example.png"
+                        class="rounded"
+                        id="task-example-image"/>
+            </div>
+            <p class="row">
+                Duis posuere auctor laoreet. Ut quis orci consequat, pulvinar magna at, luctus mauris. Donec aliquam ex ultricies, suscipit nisi nec, mattis sapien. Morbi ut nulla sapien. Nunc tortor enim, semper sit amet odio nec, consequat imperdiet turpis. Curabitur finibus, leo vitae auctor convallis, erat magna interdum sapien, non scelerisque odio purus id libero. Aliquam eu justo ut leo tincidunt aliquet non venenatis felis. Maecenas ultricies leo orci, in dictum mauris pharetra non.
+            </p>
+            <p class="row">
+                Sed efficitur nunc eget dolor accumsan maximus. Praesent cursus venenatis euismod. Quisque sed placerat enim, nec placerat turpis. Suspendisse molestie eu nulla vitae volutpat. Aenean sollicitudin lorem enim, vitae imperdiet nunc lacinia vel. Vestibulum porta velit ac elit dapibus, in venenatis velit sagittis. Donec imperdiet, dui sit amet sollicitudin commodo, magna mauris pharetra diam, sed imperdiet erat diam ut sapien. Aenean ut convallis risus. Donec quam metus, tristique vel tempor sed, tempor nec libero. Nunc placerat scelerisque vulputate. Curabitur in ipsum in nunc malesuada gravida in eget urna. Maecenas nec metus fermentum, facilisis urna sit amet, congue arcu. Fusce sit amet ligula at dolor volutpat pellentesque. Nam nec fermentum libero.
+            </p>
+        </div>
+    </div>
+</template>
+
+<style>
+#task-example-image {
+    width: 250px;
+    max-width: none;
+}
+</style>
