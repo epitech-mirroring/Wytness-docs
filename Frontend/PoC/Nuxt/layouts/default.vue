@@ -1,0 +1,21 @@
+<template>
+    <div class="layout-container">
+      <Navbar />
+      <div class="main-content">
+        <NuxtPage />
+      </div>
+      <Footer />
+    </div>
+</template>
+
+<style>
+    .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ceci garantit que la page prend toute la hauteur de la fenêtre */
+    }
+
+    .main-content {
+        flex-grow: 1; /* Cela fait en sorte que l'élément main prenne tout l'espace disponible */
+    }
+</style>
