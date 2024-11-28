@@ -1,20 +1,139 @@
-# Comparative Study
+# Comparative Study of Mobile Technologies: Flutter, React Native, Swift
 
-Flutter is one of the most powerful framework in the world in order to develop mobile apps, through this comparative study we are gonna compare the performance between Flutter and React Native whitch is its main opponent.
+## 1. Introduction
+As part of our mobile project, we evaluated three modern technologies: **Flutter** (Dart), **React Native** (JavaScript/TypeScript), and **Swift** (native for iOS). The goal was to select the technology best suited to our needs in terms of:
 
-## Performance
+- **Performance**
+- **User Experience (UX/UI)**
+- **Ease of Development**
+- **Ecosystem and Tools**
+- **Maintenance and Scalability**
 
-### Flutter
-Native Performance: Flutter uses Dart, which is compiled to native ARM or x86 code using AOT (Ahead-of-Time) compilation. This reduces the overhead of a bridge between the UI and native code, providing near-native performance.
-UI Rendering: It uses its own rendering engine (Skia) to draw components, bypassing platform-specific UI components. This results in consistent performance across platforms.
-FPS: Smooth animations at 60/120 FPS are achievable due to direct access to GPU.
+### Summary of the Decision
+After an in-depth analysis, **Flutter** was chosen for its **cross-platform performance, UI/UX flexibility, and rapid development capabilities**. This document provides a detailed comparison of the three technologies and justifies our decision.
+
+---
+
+## 2. Technology Comparison
+
+### 2.1 Evaluation Criteria
+
+| Criterion                | **Flutter**       | **React Native**      | **Swift**            |
+|--------------------------|-------------------|-----------------------|----------------------|
+| **Language**             | Dart             | JavaScript/TypeScript | Swift (iOS native)   |
+| **Performance**          | Excellent        | Moderate to Good      | Excellent (native)   |
+| **User Experience (UI/UX)** | Very Good       | Good                 | Exceptional (native) |
+| **Ease of Development**  | Very Good        | Good                 | Moderate             |
+| **Ecosystem and Tools**  | Rich             | Rich                 | Limited (iOS only)   |
+| **Maintenance and Scalability** | Very Good   | Good                 | Moderate             |
+| **Cross-Platform Support** | Yes             | Yes                  | No                   |
 
 
-### React Native
-JavaScript Bridge: React Native uses a JavaScript bridge to communicate with native modules, which can introduce latency.
-Native Components: Relies on native UI components, which can lead to better performance for simple apps but slower rendering for complex UIs.
-Optimization Needed: Heavy applications require manual performance tuning (e.g., using Hermes, optimizing re-renders).
+### 2.2 Strengths and Weaknesses of Each Technology
 
+#### **Flutter**
+##### Compilation
+
+<img src="compilation_react.png" style="width:450px">
+
+- **Strengths**:
+  - Near-native performance thanks to the **Skia** rendering engine.
+  - UI flexibility: Customizable widgets allow complete control over design.
+  - Single codebase for Android and iOS, reducing development and maintenance costs.
+  - Rich ecosystem (package manager, extensive documentation).
+  - Rapid development with **Hot Reload**.
+
+
+- **Weaknesses**:
+  - Slightly larger application sizes compared to native solutions.
+  - Fewer experienced developers available compared to React Native or Swift.
+  - Requires knowledge of Dart, a language less popular than JavaScript or Swift.
+
+#### **React Native**
+##### Compilation
+
+<img src="compilation_flutter.png" style="width:450px">
+
+- **Strengths**:
+  - Large community and extensive support due to JavaScript usage.
+  - Access to numerous third-party libraries.
+  - Cross-platform support with a single codebase for Android and iOS.
+
+
+- **Weaknesses**:
+  - Lower performance compared to Flutter or Swift in complex applications (issues with JavaScript-native bridging).
+  - Sometimes challenging dependency and version management.
+  - Slightly inferior user experience compared to native solutions.
+
+#### **Swift**
+##### Compilation
+
+<img src="compilation_swift.png" style="width:450px">
+
+- **Strengths**:
+  - Optimal performance and direct access to iOS native APIs.
+  - Fully leverages iOS-specific features.
+  - Exceptional user experience with complete control over the interface.
+
+- **Weaknesses**:
+  - Development limited to iOS (no cross-platform support).
+  - Higher development costs if an Android version is also required.
+  - Steeper learning curve for developers unfamiliar with Swift.
+
+---
+
+## 3. Justification for Choosing Flutter
+
+### 3.1 Performance
+- **Flutter** outperforms React Native thanks to its Skia graphics engine, which eliminates JavaScript-native bridges and provides smooth animations.
+- While Swift offers unmatched native performance, Flutter is fast enough to ensure an excellent user experience on both platforms.
+
+<img src="factorial.png" style="width: 30%">
+
+With a big surprise flutter seem to be the best techno to handle massive calculation test for the CPU compared to react far behind.
+
+### 3.2 User Experience (UI/UX)
+- **Flutter widgets** allow full control over the user interface, enabling highly customized designs without relying on native components.
+- React Native is limited by its hybrid approach, while Swift is optimal but constrained to iOS only.
+
+Swift is the reference in term of component because they its the native language backed by Apple so lets see how close the component are between the 2 framework Flutter & React-native:
+
+In order to develop the area project i need to use the modal bottom sheet component from Apple to list all the APis here how it should look:
+
+Swift (reference)         |  React-native       |   Flutter
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="modal_swift.png">|<img src="modal_react-native.png">|<img src="modal_flutter.png">|
+
+As we can see both modal sheet look quite the same but the animation of background black filter with opacity is less smooth than flutter when opening the modal
+
+### 3.3 Ease of Development
+- **Hot Reload** in Flutter significantly speeds up the development cycle, a major advantage over Swift.
+- A single codebase requirement (versus two with Swift) reduces development time compared to native solutions.
+
+### 3.4 Ecosystem and Tools
+- Flutter offers a rich ecosystem with well-documented packages and tools like **Flutter DevTools** for debugging.
+- React Native benefits from JavaScript's popularity, but its libraries are sometimes less well-maintained.
+- Swift is limited to the iOS ecosystem, making it less attractive for cross-platform applications.
+
+### 3.5 Maintenance and Scalability
+- Flutter simplifies maintenance through its unified codebase.
+- React Native, while scalable, can face compatibility issues with libraries.
+- Swift requires independent maintenance for each platform, increasing costs.
+
+### 3.6 Time to launch the app
+
+Flutter         |  React-native       |   Swift
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="time_flutter.png">|<img src="time_react.png">|<img src="time_swift.png">|
+
+### Community and Ecosystem
+
+---
+
+## 4. Conclusion
+
+### Why Flutter?
+- **High-performance cross-platform support**: Flutter ensures near-native performance on Android and iOS with a single codebase.
 
 comparative of performance when scroll through a list view (frame, heap...)
 | Android                                                                 | iOS                                                                    |
@@ -28,74 +147,15 @@ comparative of performance when add animation (usefull when we will create node 
 
 ---
 
-After the compilation of the default app of each framework, Flutter look way more lighweight that the react native app and the time to build it is way more fast for the flutter side.
+- **UI/UX flexibility**: Flutter allows modern, highly customized user interfaces.
+- **Fast and efficient development**: Hot Reload and a rich ecosystem make development seamless.
+- **Reduced costs**: A single codebase cuts down development and maintenance expenses.
+
+### Accepted Limitations
+- Slightly larger app sizes.
+- The need to train or hire developers proficient in Dart.
 
 <img src="storage_default_app.png" style="width: 40%">
 
-## Compilation
-
-### Flutter
-Compilation Process:
-AOT (Ahead-of-Time) for production builds ensures fast startup and optimized performance.
-JIT (Just-in-Time) for development builds provides hot-reload for faster iteration.
-Cross-Platform: The Dart compiler outputs native machine code for iOS, Android, Windows, macOS, and Linux.
-
-### React Native
-JavaScript: React Native applications are written in JavaScript, which is interpreted at runtime (unless using Hermes, a JS engine that supports AOT compilation).
-Bundling: Uses Metro bundler to package the JavaScript code.
-
-| React                                                                 | Flutter                                                                    |
-|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <img src="compilation_react.png" style="width:450px"> | <img src="compilation_flutter.png" style="width:477px"> |
-
-
-## UI/UX
-
-### Flutter
-Custom Widgets: Flutter provides an extensive collection of widgets, allowing developers to design custom UIs.
-Consistency: The UI looks identical across platforms since it's rendered using Flutter's engine.
-Theming: Built-in Material Design and Cupertino widgets for Android and iOS styles, respectively.
-
-### React Native
-Native Look and Feel: Uses platform-native UI components, giving apps a native feel but sometimes resulting in inconsistencies across devices.
-Third-party Libraries: Relies heavily on third-party libraries for certain UI/UX features.
-
-## Development Speed
-
-### Flutter
-Hot Reload: Provides near-instant feedback, boosting developer productivity.
-Single Codebase: Truly cross-platform with a single codebase for Android, iOS, web, and desktop.
-Dart Language: Dart’s syntax is easy to learn but requires onboarding time for developers not familiar with it.
-### React Native
-Hot Reload/Live Reload: Offers similar features but can be slower due to the JavaScript bridge.
-JavaScript Ecosystem: Leverages JavaScript, a widely known language, which speeds up onboarding for developers.
-Dependency on Libraries: Heavy reliance on third-party libraries can speed up development but may also lead to versioning issues.
-
-## Community and Ecosystem
-
-### Flutter
-Growing Community: Backed by Google, with strong adoption in enterprise and startups.
-Plugins: Official and community plugins are available but less diverse than React Native.
-Documentation: Well-maintained and beginner-friendly.
-
-### React Native
-Mature Ecosystem: A larger and older community than Flutter, leading to a more extensive library of third-party modules.
-Facebook Backing: React Native is backed by Facebook, with many large-scale apps using it.
-Open Source Contributions: Active contributions from developers worldwide.
-React native is no longer used by facebook for their social network whitch could get tend to told that the framework is less a priority for the flutter
-
-The communauty seem to be bigger on flutter with more stars 10 time more issues open to contibute to the repository.
-
-| React                                                                 | Flutter                                                                    |
-|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <img src="react_native.png" style="width:450px"> | <img src="flutter.png" style="width:477px"> |
-
-
-## Cross-Platform Capability
-
-### Flutter
-Supports Android, iOS, Web, Windows, macOS, and Linux natively.
-Stable performance across all platforms.
-### React Native
-Primarily focused on Android and iOS.
-Community-driven efforts for web and desktop support (e.g., React Native for Windows).
+### Final Decision
+**Flutter was chosen as the primary technology for our mobile application, offering the ideal balance between performance, flexibility, and cross-platform efficiency.**
