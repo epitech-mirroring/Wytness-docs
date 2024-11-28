@@ -1,98 +1,90 @@
-# Comparaison des Frameworks : Nuxt, Angular et React
+# Comparing frameworks: Nuxt, Angular and React
 
-Ce document compare trois frameworks web populaires : **Nuxt**, **Angular**, et **React**. Chaque framework offre des avantages spécifiques en termes de performance, écosystème, facilité d'apprentissage, développement, maintenance, et cas d'utilisation. Cette analyse détaillée vous aidera à choisir le framework le mieux adapté à vos besoins.
+This document compares three popular web frameworks: **Nuxt**, **Angular**, and **React**. Each framework offers specific advantages in terms of performance, ecosystem, ease of learning, development, maintenance, and use cases. This detailed analysis will help you choose the framework best suited to your needs.
 
 ## Performance
 
-#### Résumé
+#### Summary
 
-| Critère               | Nuxt                              | Angular                           | React                             |
+| Criteria | Nuxt | Angular | React |
 |-----------------------|-----------------------------------|-----------------------------------|-----------------------------------|
-| **Initial Load**      | Rapide grâce au SSR et au SSG     | Plus lourd à cause de l'écosystème complet | Très rapide, dépend de la configuration (CSR/SSR via Next.js) |
-| **Runtime**           | Optimisé avec Vue 3 et reactivity | Performances constantes mais peut être verbeux | Très rapide grâce à la Virtual DOM |
-| **Rendering**         | SSR/SSG intégré                  | CSR principal, SSR via Universal | CSR natif, SSR via Next.js       |
+| **Initial Load** | Fast thanks to SSR and SSG | Heavier because of the full ecosystem | Very fast, depends on configuration (CSR/SSR via Next.js) | Optimised performance with Vue 3 and Vue 3.
+| **Runtime** | Optimised with Vue 3 and reactivity | Consistent performance but can be verbose | Very fast thanks to Virtual DOM | SSR and SSG
+| **Rendering** | SSR/SSG integrated | Main CSR, SSR via Universal | Native CSR, SSR via Next.js |
 
-#### Détails
+#### Details
 
-Nuxt se distingue par ses capacités intégrées de **Server-Side Rendering (SSR)** et de **Static Site Generation (SSG)**, ce qui le rend particulièrement adapté aux applications qui nécessitent des temps de chargement rapides et une optimisation pour le SEO.
+Nuxt stands out for its integrated **Server-Side Rendering (SSR)** and **Static Site Generation (SSG)** capabilities, making it particularly suited to applications that require fast load times and SEO optimisation.
 
-Angular, bien que performant, peut présenter des temps de chargement initiaux plus lents en raison de son écosystème complet et de la taille de ses bundles. Cependant, son système de compilation **Ahead-of-Time (AOT)** améliore les performances à runtime.
+Angular, while powerful, can have slower initial load times due to its comprehensive ecosystem and the size of its bundles. However, its **Ahead-of-Time (AOT)** compilation system improves runtime performance.
 
-React, en combinaison avec **Next.js** pour le SSR, offre des performances compétitives, particulièrement en termes de **Time to Interactive (TTI)** et de **First Contentful Paint (FCP)**. Son architecture flexible permet d'optimiser les performances selon les besoins spécifiques.
+React, in combination with **Next.js** for SSR, offers competitive performance, particularly in terms of **Time to Interactive (TTI)** and **First Contentful Paint (FCP)**. Its flexible architecture means that performance can be optimised to meet specific needs.
 
-#### Sources
+## Ecosystem
 
-## Écosystème
+#### Summary
 
-#### Résumé
-
-| Critère                | Nuxt                              | Angular                           | React                             |
+| Criteria | Nuxt | Angular | React |
 |------------------------|-----------------------------------|-----------------------------------|-----------------------------------|
-| **State Management**   | Vuex, Pinia                      | NgRx, Akita                      | Redux, Zustand                   |
-| **Routing**            | Intégré                          | Intégré                          | Externe (React Router)           |
-| **Tooling**            | Excellent (Nuxt CLI, vite)       | Complété avec Angular CLI         | Basique, mais extensible avec Vite, Webpack |
+| **State Management** | Vuex, Pinia | NgRx, Akita | Redux, Zustand |
+| **Routing** | Integrated | Integrated |External (React Router) |
+| **Tooling** | Excellent (Nuxt CLI, vite) | Completed with Angular CLI | Basic, but extensible with Vite, Webpack |
 
-#### Détails
+#### Details
 
-Nuxt se démarque par son approche modulaire et son CLI intuitif, facilitant la mise en place rapide de projets avec une structure cohérente. Son intégration avec Vue 3 et des outils comme Pinia permet une gestion d'état moderne et simplifiée.
+Nuxt stands out for its modular approach and intuitive CLI, making it easy to quickly set up projects with a coherent structure. Its integration with Vue 3 and tools such as Pinia enables modern, simplified state management.
 
-Angular offre un écosystème complet et cohérent, avec un routage intégré et des bibliothèques comme Angular Material pour l'UI. Cependant, sa complexité peut représenter un défi pour les petits projets.
+Angular offers a complete and coherent ecosystem, with integrated routing and libraries like Angular Material for the UI. However, its complexity can be a challenge for small projects.
 
-React, bien qu'il soit plus modulaire et nécessite des bibliothèques externes (comme Redux ou React Router), reste un choix populaire grâce à sa flexibilité et à la richesse de son écosystème communautaire.
+React, while more modular and requiring external libraries (such as Redux or React Router), remains a popular choice thanks to its flexibility and rich community ecosystem.
 
-#### Sources
+## Ease of learning
 
-## Facilité d'apprentissage
+#### Summary
 
-#### Résumé
-
-| Critère                | Nuxt                              | Angular                           | React                             |
+| Criteria | Nuxt | Angular | React |
 |------------------------|-----------------------------------|-----------------------------------|-----------------------------------|
-| **Courbe d'apprentissage** | Douce grâce à Vue              | Abrupte en raison de la complexité | Moyenne, avec des concepts simples mais extensibles |
-| **Documentation**      | Excellente et claire             | Complète mais dense               | Accessible, avec beaucoup de contenu communautaire |
+| **Learning curve** | Gentle due to Vue | Abrupt due to complexity | Medium, with simple but extensible concepts |
+**Documentation** | Excellent and clear | Comprehensive but dense | Accessible, with lots of community content | Accessible, with lots of community content | Accessible, with lots of community content | Accessible, with lots of community content | Accessible, with lots of community content
 
-#### Détails
+#### Details
 
-Nuxt (et Vue) est souvent recommandé pour les débutants grâce à sa syntaxe intuitive et sa documentation bien organisée. Angular, en revanche, nécessite une compréhension préalable approfondie des concepts comme les services, les modules et le typage fort avec TypeScript. React, avec ses concepts comme les composants fonctionnels et les hooks, est considéré comme un juste milieu.
+Nuxt (and Vue) is often recommended for beginners thanks to its intuitive syntax and well-organised documentation. Angular, on the other hand, requires a thorough prior understanding of concepts such as services, modules and strong typing with TypeScript. React, with its concepts such as functional components and hooks, is considered to be a happy medium.
 
-#### Sources
+## Development and Maintenance
 
-## Développement et Maintenance
+#### Summary
 
-#### Résumé
-
-| Critère                | Nuxt                              | Angular                           | React                             |
+| Criteria | Nuxt | Angular | React |
 |------------------------|-----------------------------------|-----------------------------------|-----------------------------------|
-| **Modularité**         | Elevée grâce à Vue 3             | Moyenne, fortement structuré      | Très élevée                       |
-| **Maintenance**        | Simple, configuration minimale   | Exigeante pour les gros projets   | Moyenne, dépend des dépendances tierces |
+| **Modularity** | High thanks to Vue 3 | Medium, highly structured | Very high |
+| **Maintenance** | Simple, minimal configuration | Demanding for large projects | Medium, depends on third-party dependencies |
 
-#### Détails
+#### Details
 
-Nuxt simplifie le développement grâce à ses conventions fortes et une configuration minimale. Angular impose une architecture rigide, ce qui facilite la maintenance des projets complexes, mais peut ralentir les cycles de développement. React, avec sa modularité, est plus adapté aux projets évolutifs mais peut devenir difficile à maintenir si les dépendances sont mal gérées.
+Nuxt simplifies development thanks to its strong conventions and minimal configuration. Angular imposes a rigid architecture, which makes complex projects easier to maintain, but can slow down development cycles. React, with its modularity, is better suited to scalable projects, but can become difficult to maintain if dependencies are poorly managed.
 
-#### Sources
+## Use cases
 
-## Cas d'utilisation
+#### Summary
 
-#### Résumé
-
-| Type de Projet                | Nuxt                   | Angular                | React                     |
+| Project Type | Nuxt | Angular | React |
 |-------------------------------|------------------------|------------------------|---------------------------|
-| **SEO / Static Sites**        | Idéal (SSR/SSG natif)  | Possible (via Universal) | Très bon avec Next.js      |
-| **Applications Entreprises**  | Moyennement adapté     | Idéal                  | Adapté (modulaire)         |
-| **Applications dynamiques**   | Très bon               | Bon                    | Idéal                     |
+| **SEO / Static Sites** | Ideal (native SSR/SSG) | Possible (via Universal) | Very good with Next.js |
+| **Business Applications** | Moderately suitable | Ideal | Suitable (modular) |
+| **Dynamic applications** | Very good | Good | Ideal |
 
-#### Détails
+#### Details
 
-- **Nuxt** est idéal pour les sites nécessitant une forte optimisation SEO ou une génération statique, comme les blogs ou les sites vitrines.
-- **Angular** convient parfaitement aux grandes applications d’entreprise nécessitant une structure stricte et un typage fort.
-- **React** est un choix flexible pour les projets dynamiques comme les marketplaces ou les réseaux sociaux.
+- **Nuxt** is ideal for sites requiring strong SEO optimisation or static generation, such as blogs or showcase sites.
+- **Angular** is ideal for large enterprise applications requiring strict structure and strong typing.
+- **React** is a flexible choice for dynamic projects such as marketplaces or social networks.
 
-## Avis Personnels
+## Personal opinion
 
-Nous avons tester via des PoC les trois frameworks et nous avons trouvé que **Nuxt** était le plus adapté pour notre projet en raison de sa facilité d'utilisation, de sa performance et par rapport au besoins de notre application. **Angular** était trop complexe pour notre équipe et **React** était un bon choix, mais **Nuxt** offrait une meilleure intégration avec Vue 3.
+We tested all three frameworks via PoC and found **Nuxt** to be the most suitable for our project due to its ease of use, performance and the needs of our application. **Angular** was too complex for our team and **React** was a good choice, but **Nuxt** offered better integration with Vue 3.
 
 
 ## Conclusion
 
-Le choix entre **Nuxt**, **Angular**, et **React** dépend principalement des besoins spécifiques de votre projet. **Nuxt** excelle pour les projets orientés SEO. **Angular** est idéal pour les applications complexes d’entreprise, et **React**, grâce à sa modularité, est adapté à presque tous les types de projets. Prenez en compte la taille de votre équipe, vos objectifs et vos compétences pour faire le choix optimal.
+The choice between the different technologies to be tested will depend mainly on the needs of our project. The skills and appetite of our team members. In terms of affinity with the technologies, the team chose Nuxt for its ease of use and performance. From the point of view of our project, Nuxt is the most suitable framework for our application, Angular is better suited to larger applications and React offers great flexibility, but requires more configuration and manual management, which makes it less suitable for our current needs.
