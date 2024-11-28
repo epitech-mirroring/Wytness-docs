@@ -34,7 +34,7 @@ After an in-depth analysis, **Flutter** was chosen for its **cross-platform perf
 #### **Flutter**
 ##### Compilation
 
-<img src="compilation_react.png" style="width:450px">
+<img src="compilation_flutter.png" style="width:450px">
 
 - **Strengths**:
   - Near-native performance thanks to the **Skia** rendering engine.
@@ -52,7 +52,7 @@ After an in-depth analysis, **Flutter** was chosen for its **cross-platform perf
 #### **React Native**
 ##### Compilation
 
-<img src="compilation_flutter.png" style="width:450px">
+<img src="compilation_react.png" style="width:450px">
 
 - **Strengths**:
   - Large community and extensive support due to JavaScript usage.
