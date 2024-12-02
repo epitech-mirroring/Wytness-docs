@@ -2,5 +2,15 @@
   "name": "Wytness",
   "anchors": [],
   "navigation": [
-  ]
+    {
+      "group": "Getting Started",
+      "pages": ["introduction", "quickstart"]
+    }
+  ],
+  "favicon": "/favicon.ico",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#4ADE80",
+    "dark": "#166534"
+  }
 }
